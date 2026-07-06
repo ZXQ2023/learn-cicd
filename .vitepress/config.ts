@@ -1,11 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  // GitHub Pages 项目站点部署在 https://zxq2023.github.io/learn-cicd/
+  // base 必须是仓库名（前后带斜杠），否则资源路径会 404
+  base: '/learn-cicd/',
   title: 'CI/CD 学习指南',
   description: '从零开始学习持续集成、持续交付与持续部署',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  // README.md 是仓库门面,不是站点页面,排除以免 dead link 检查失败
+  srcExclude: ['README.md'],
 
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
