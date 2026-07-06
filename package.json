@@ -1,0 +1,16 @@
+{
+  "name": "ci-cd-doc",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CI/CD 学习文档 - 使用 VitePress 构建",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.4.0"
+  },
+  "license": "MIT"
+}
